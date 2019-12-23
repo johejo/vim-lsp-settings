@@ -4,7 +4,7 @@ set -e
 
 usage() {
   cat <<USAGE
-Usage: $0 [pattern] [args]...
+Usage: $0 [pattern] [args...]
 
 Examples 
 $0 pyls
@@ -20,9 +20,9 @@ fi
 
 test_installer() {
   "./installer/install-$1.sh"
-  python3 ./test/req.py | "./servers/$1/$1" $2
-  echo
-  echo result="$?"
+  ./test/send.py | "./servers/$1/$1" $2
+  ret="$?"
+  printf "\n\nresult=%s" $ret
 }
 export -f test_installer
 
