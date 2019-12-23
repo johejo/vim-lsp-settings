@@ -39,14 +39,6 @@
       ]
     }
   ],
-  "python": [
-    {
-      "command": "pyls",
-      "requires": [
-        "python3"
-      ]
-    }
-  ],
   "rust": [
     {
       "command": "rls",
@@ -178,6 +170,14 @@
       "command": "fortls",
       "requires": [
         "python3"
+      ]
+    }
+  ],
+  "python": [
+    {
+      "command": "pyls_ms",
+      "requires": [
+        "dotnet"
       ]
     }
   ]
