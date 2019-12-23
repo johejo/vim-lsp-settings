@@ -172,5 +172,13 @@
         "java"
       ]
     }
+  ],
+  "fortran": [
+    {
+      "command": "fortls",
+      "requires": [
+        "python3"
+      ]
+    }
   ]
 }
